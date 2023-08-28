@@ -1,0 +1,37 @@
+PLEASE NOTE: '%' INDICATES THE EXPLAINATION FOR THE CODE
+
+UNIT IMPULSE SIGNAL:
+clc;clear all;close all;
+n=-2:1:2;
+g= [zeros(1,2),ones(1,1),zeros(1,2)]
+figure= (1)
+stem (n,y);
+xlabel("Time")
+ylabel("amplitude")
+title('unit impluse');
+
+code explanation:
+
+clc;         % Clear the Command Window
+clear all;   % Clear all variables from the workspace
+close all;   % Close all open figure windows
+n = -2:1:2;  % Create a vector 'n' ranging from -2 to 2 with a step size of 1
+g = [zeros(1,2), ones(1,1), zeros(1,2)]; 
+% In this line, a vector g is created with the values [0, 0, 1, 0, 0]. This vector represents an impulse signal, where the middle element is 1 (indicating the impulse) and the rest are 0.
+figure = (1);  
+%This line creates a variable named figure and assigns the value 1 to it. It seems like there is a misunderstanding here – it's not necessary to assign a value to figure like this.
+stem(n, g);  
+%This line uses the stem function to create a stem plot. The values in vector g are plotted against the corresponding values in vector n. This will display the impulse signal as a stem plot.
+xlabel("Time")  
+ylabel("Amplitude")
+title('Unit Impulse');
+% These lines add labels and a title to the plot. xlabel sets the label for the x-axis, ylabel sets the label for the y-axis, and title sets the title of the plot.
+So, the code essentially generates an impulse signal using the vector g and plots it using the stem function, labeling the axes and providing a title to the plot. However, there seems to be a minor issue with the line assigning a value to figure, as mentioned above.
+
+
+
+
+
+
+
+
