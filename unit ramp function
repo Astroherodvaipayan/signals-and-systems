@@ -6,3 +6,23 @@ stem(t,t)
 xlabel("time")
 ylabel("amplitude")
 title('unit ramp function')
+
+
+Code Explaination:
+clc; clear all; close all;: These are command-line instructions that clear the command window, clear all variables from the workspace, and close all open figures, respectively. This is a common practice to start with a clean environment.
+
+n = input("enter the value of n"): This line prompts the user to enter a value for n, and the input is stored in the variable n. The user is expected to input an integer value.
+
+t = 0:n;: Here, an array t is created, starting from 0 and ending at n. This will result in an array containing integers from 0 to n.
+
+y = ones(1, n): This line creates an array y with all elements initialized to 1. The array will have n elements, all of which are equal to 1. This represents the amplitude of the unit ramp function.
+
+stem(t, t): The stem function is used to create a stem plot. It takes two arguments, where the first argument (t) represents the x-values (time), and the second argument (t) represents the y-values (amplitude). In this case, both x and y-values are set to t, which means it will plot a unit ramp function.
+
+xlabel("time"): Sets the label for the x-axis of the plot to "time".
+
+ylabel("amplitude"): Sets the label for the y-axis of the plot to "amplitude".
+
+title('unit ramp function'): Sets the title of the plot to 'unit ramp function'.
+
+So, when you run this code, it will prompt you to enter a value for n, and then it will plot a unit ramp function with x-values ranging from 0 to n and y-values equal to the x-values. This results in a diagonal line starting from the origin and ascending linearly as n increases.
