@@ -1,0 +1,30 @@
+clc;close all;clear all;
+n= input ("enter the value");
+t= 0:1:n-1
+y= ones(1,n)
+figure ()
+plot (t,y);
+xlabel("time")
+ylabel("amplitude")
+title("unit step function")
+
+explaination:
+clc; close all; clear all;: These are command-line instructions that are often used at the beginning of a MATLAB script to clear the console, close all open figures, and clear all variables from the workspace. clc clears the command window, close all closes all open figures, and clear all removes all variables from the workspace.
+
+n = input("enter the value");: This line prompts the user to enter a value, and that value is stored in the variable n. The input function is used to take user input, and the text inside the parentheses is the prompt displayed to the user.
+
+t = 0:1:n-1: This line creates an array t that represents time values. It uses the colon operator (:) to generate values from 0 to n-1 with a step size of 1. This essentially creates an array of integers from 0 to n-1.
+
+y = ones(1, n): Here, an array y is created with all elements initialized to 1. The ones function is used for this purpose. The resulting array y will have n elements, all of which are equal to 1.
+
+figure(): This line creates a new figure window for plotting. In MATLAB, figures are used to display plots and graphical output.
+
+plot(t, y): This line plots the values in the array y against the values in the array t. It creates a simple plot of a unit step function, where the y-values are all 1, and the x-values are the integers from 0 to n-1. This will result in a plot of a horizontal line at y=1.
+
+xlabel("time"): Sets the label for the x-axis of the plot to "time".
+
+ylabel("amplitude"): Sets the label for the y-axis of the plot to "amplitude".
+
+title("unit step function"): Sets the title of the plot to "unit step function".
+
+So, this code takes a user input for n, creates a time vector t and a corresponding unit step function y, and then plots this unit step function with appropriate labels and a title. When you run the code, it will display a plot of a horizontal line at y=1, which represents a unit step function.
