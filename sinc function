@@ -1,0 +1,6 @@
+t1 = linespace (5,-5);
+y1= sinc(y1)
+plot(t1,y1)
+xlabel("amplitude")
+ylabel("time")
+title("sinc function")
