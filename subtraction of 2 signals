@@ -1,0 +1,26 @@
+0:0.01:0.1
+f=25;
+t1= 2*pi*f*t;
+x1= sin(t1)
+subplot(3,1,1)
+plot(t1,x1)
+title('x1')
+xlabel("time")
+ylabel("amplitude")
+grid on;
+
+x2= cos(t1)
+subplot(3,1,2)
+plot(t1,x2)
+title('x2')
+xlabel("time")
+ylabel("amplitude")
+grid on;
+
+y= x1-x2;
+subplot(t,y)
+plot(t,y)
+title('x3')
+xlabel("time")
+ylabel("amplitude")
+title('addition of 2 signals')
