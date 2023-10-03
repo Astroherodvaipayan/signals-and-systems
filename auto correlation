@@ -1,0 +1,24 @@
+import numpy as np
+import matplotlib as plt
+x=[1,2,3,4,5];
+y=[2,4,6,8,10];
+cross_corr =np.correlate(x,mode='full')
+print("cross correlation",cross_corr)
+auto_corr  = np.correlate(y,mode='full')
+print("auto correlation",auto_corr)
+
+lags= np.arange(-len(x), len(x))
+
+plt.stem(lags,cross_corr)
+plt.xlabel('lag')
+plt.ylabel('cross correlation')
+plt.title('cross corrleation of x and y')
+pt.grid(true)
+plt.show()
+
+plt.stem(lags,cross_corr)
+plt.xlabel('lag')
+plt.ylabel('auto correlation')
+plt.title('auto corrleation of x and y')
+pt.grid(true)
+plt.show()
