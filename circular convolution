@@ -1,0 +1,14 @@
+import numpy as np
+h=[1,2,3,4,5] 
+x= [1,2,1]
+N=max(len(x),len(h))
+x_padded= np.pad(x,(0,N-len(x)),mode ='constant')
+h_padded =np.pad(y,(0,N-len(h)),mode ='constant')
+X1=np.fft.fft(x_padded)
+H1=np.fft.fft(h_padded)
+Y= np.fft.ifft(X1*H1)
+print("circular convolution",np.real(Y))
+  
+  
+  
+  
